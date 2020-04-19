@@ -1,11 +1,14 @@
 @import "vars";
 @import "libs";
 @import "fonts";
+@import "blocks/_header.scss";
+@import "blocks/_intro.scss";
 
 body {
     font-family: $primary-font;
     font-size: $primary-size;
-    color: $primary-clor;
+    color: $primary-color;
+    font-weight: $primary-weight;
 }
 
 *,
@@ -38,5 +41,23 @@ button {
     max-width: 1200px;
     padding: 0px 15px;
     margin: 0 auto;
+}
+
+.logo {
+    max-width: 105px;
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+.btn__callback {
+    padding: 16px 30px 16px;
+    color: $tertiary-btn;
+    font-family: $tertiary-font;
+    font-size: $secondary-size;
+    text-transform: uppercase;
+    border-radius: 25px;
+    border: 2px solid $tertiary-btn;
 }
 
