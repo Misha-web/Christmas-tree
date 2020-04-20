@@ -3581,6 +3581,10 @@ template {
   width: 100%;
 }
 
+.section__subtitle-img--small {
+  max-width: 10%;
+}
+
 .section__subtitle-text {
   margin: 0 25px;
   font-weight: 700;
@@ -3846,6 +3850,116 @@ template {
   }
   .catalog__suptitle-text {
     font-size: 16px;
+  }
+}
+
+.advantage {
+  padding-top: 120px;
+  background-image: url(../img/advantage-bg.jpg);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-color: #d6000a;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.advantage__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 270px;
+}
+
+.advantage__item {
+  flex-basis: 20%;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.advantage__item:nth-child(2n) {
+  padding-top: 90px;
+}
+
+.advantage__item-img {
+  margin: 0 auto 30px;
+  max-width: 70px;
+}
+
+.advantage__item-img img {
+  display: block;
+  width: 100%;
+}
+
+.advantage__item-title {
+  font-family: "Circe Bold", sans-serif;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.advantage__item-text {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media (max-width: 1200px) {
+  .advantage {
+    padding-top: 100px;
+  }
+  .advantage__item-title {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .advantage__item-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .advantage {
+    padding-top: 80px;
+  }
+  .advantage__item-title {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 880px) {
+  .advantage {
+    padding-top: 60px;
+    background-image: none;
+  }
+  .advantage__inner {
+    justify-content: center;
+    padding-bottom: 70px;
+    margin: 0 -15px;
+  }
+  .advantage__item {
+    padding: 0 15px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 50%;
+  }
+  .advantage__item:nth-child(2n) {
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .advantage {
+    padding-top: 50px;
+  }
+  .advantage__inner {
+    padding-bottom: 40px;
+    margin: 0;
+  }
+  .advantage__item {
+    padding: 0 0px 30px;
+    flex-basis: 100%;
   }
 }
 

@@ -18,6 +18,9 @@
 		display: block;
 		max-width: 20%;
 		width: 100%;
+		&--small {
+			max-width: 10%;
+		}
 	}
 	&__subtitle-text {
 		margin: 0 25px;
