@@ -7,6 +7,8 @@ $primary-bg: #d6000a;
 
 $tertiary-btn: #1c7e39;
 
+$secondary-bg: #f5f5f5;
+
 //Fonts
 $primary-font: 'Circe Regular', sans-serif;
 
@@ -15,19 +17,29 @@ $secondary-font: 'Circe Bold', sans-serif;
 $tertiary-font: 'Circe Extra Bold', sans-serif;
 
 //Fonts-size
-$primary-size: 24px;
-
-$size-alfa: 18px;
-
 $secondary-size: 14px;
+
+$size-gamma: 15px;
 
 $tertiary-size: 16px;
 
+$size-alfa: 18px;
+
+$primary-size: 24px;
+
 $primary-big: 36px;
+
+$size-beta: 48px;
 
 //Weight
 $primary-weight: 400;
 $secondary-weight: 700;
+
+//Line height
+$primary-height: 60px;
+
+$secondary-height: 30px;
+
 
 // Media screen
 $md1: 1200px;

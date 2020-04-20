@@ -46,8 +46,9 @@
 		font-weight: $secondary-weight;
 		line-height: 25px;
 		text-decoration: none;
+		transition: .2s;
 		&:hover {
-			text-decoration: underline;
+			color: $tertiary-btn;
 		}
 	}
 }
