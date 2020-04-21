@@ -39,6 +39,17 @@ $(document).ready(function() {
 		},
 		]
 	});
+
+	//Map
+	let advantage = $('.advantage');
+	let	advantageTop = advantage.offset().top;
+	$(window).bind('scroll', function() {
+		let windowTop = $(this).scrollTop();
+		if (windowTop > advantageTop) {
+			$('#map').html('<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.4843149381772!2d27.54984321585956!3d53.90536918010003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfeb646109f3%3A0x7dad7fbe4e6ae008!2z0L_RgC3Rgi4g0J_QvtCx0LXQtNC40YLQtdC70LXQuSAxLCDQnNC40L3RgdC6LCDQkdC10LvQsNGA0YPRgdGM!5e0!3m2!1sru!2sua!4v1587492789662!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>')
+			$(window).unbind('scroll');
+		}
+	});
 });
 
 

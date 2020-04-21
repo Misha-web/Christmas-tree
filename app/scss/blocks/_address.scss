@@ -1,0 +1,144 @@
+.address {
+	position: relative;
+	&__map {
+		iframe {
+			width: 100%;
+			height: 700px;
+		}
+	}
+	&__wrapper {
+		padding: 120px 50px 120px 0px;
+		margin-left: 200px;
+		height: 100%;
+		width: 30%;
+		background-color: $secondary-color;
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		left: 0;
+	}
+	&__item {
+		padding-left: 70px;
+		position: relative;
+	}
+	&__item-icon {
+		box-shadow: 0 20px 75px rgba(0, 133, 52, 0.3);
+		background-color: #008534;
+		border-radius: 50%;
+		padding: 10px;
+		position: absolute;
+		top: 50%;
+		right: 95%;
+		transform: translateY(-50%);
+	}
+	&__item-tile {
+		line-height: 48px;
+		font-family: $tertiary-font;
+		font-size: $primary-size;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	&__item-text {
+		padding-left: 70px;
+		font-size: $size-alfa;
+		margin-bottom: 100px;
+	}
+	&__phones {
+		margin-bottom: 60px;
+		display: flex;
+		flex-direction: column;
+	}
+	&__phones-link {
+		text-decoration: none;
+		color: $primary-color;
+		line-height: 36px;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&__callback {
+		margin-left: 70px;
+		color: $secondary-color;
+		font-family: $tertiary-font;
+		font-size: $size-alfa;
+		text-transform: uppercase;
+		box-shadow: 0 20px 50px rgba(124, 0, 12, 0.25);
+		border-radius: 29px;
+		background-color: #b80212;
+		padding: 20px 40px;
+	}
+}
+
+@media(max-width: 1300px) {
+	.address {
+		&__wrapper {
+			padding: 100px 20px 100px;
+			margin-left: 0px;
+			height: 100%;
+			width: 30%;
+			background-color: $secondary-color;
+			position: absolute;
+			z-index: 2;
+			top: 0;
+			left: 0;
+		}
+		&__item {
+			padding-left: 50px;
+		}
+		&__item-icon {
+			left: 0px;
+			right: 0;
+		}
+		&__item-tile {
+			line-height: 40px;
+			font-size: 22px;
+		}
+		&__item-text {
+			padding-left: 50px;
+			font-size: 16px;
+			margin-bottom: 80px;
+		}
+		&__phones {
+			margin-bottom: 40px;
+		}
+		&__phones-link {
+			line-height: 30px;
+		}
+		&__callback {
+			margin-left: 50px;
+			font-size: 16px;
+			padding: 18px 35px;
+		}
+	}
+}
+
+@media(max-width: $md2) {
+	.address {
+		&__wrapper {
+			order: -1;
+			position: relative;
+			width: 100%;
+			padding: 60px 20px 60px;
+		}
+
+	}
+}
+
+@media(max-width: $md4) {
+	.address {
+		&__map {
+			iframe {
+				width: 100%;
+				height: 500px;
+			}
+		}
+	}
+}
+
+@media(max-width: $minwidth) {
+	.address {
+		&__callback {
+			margin-left: 20px;
+		}
+	}
+}
