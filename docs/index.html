@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="header">
+	<header class="header wow fadeInUp">
 		<div class="container">
 			<div class="header__inner">
 				<div class="header__item">
@@ -32,7 +32,7 @@
 					</div>
 				</div>
 				<div class="header__item">
-					<button class="btn__callback">заказать звонок</button>
+					<button class="btn__callback js-button-compaign">заказать звонок</button>
 				</div>
 			</div>
 			<!-- /.header__inner -->
@@ -44,15 +44,15 @@
 	<section class="intro">
 		<div class="container">
 			<div class="intro__inner">
-				<h1 class="intro__title">Искусственные ёлки от Белорусского производителя</h1>
-				<div class="intro__box">
+				<h1 class="intro__title wow fadeInLeft" data-wow-delay="0.2s">Искусственные ёлки от Белорусского производителя</h1>
+				<div class="intro__box wow fadeInLeft" data-wow-delay="0.4s">
 					<img src="img/intro-img.png" alt="Искусственные ёлки по самой низкой цене" class="intro__box-img" />
 					<div class="intro__box-text">По самой низкой цене</div>
 				</div>
-				<div class="intro__text">Успейте купить елку до сезонного поднятия цен!</div>
-				<div class="intro__subtext">До 1 ноября <span>цены ниже до 40%</span></div>
-				<div class="intro__buttons">
-					<a href="#" class="intro__buttons-link">Выбрать елку</a>
+				<div class="intro__text wow fadeInLeft" data-wow-delay="0.6s">Успейте купить елку до сезонного поднятия цен!</div>
+				<div class="intro__subtext wow fadeInLeft" data-wow-delay="0.8s">До 1 ноября <span>цены ниже до 40%</span></div>
+				<div class="intro__buttons wow fadeInLeft" data-wow-delay="1s">
+					<a href="#" class="intro__buttons-link js-button-compaign">Выбрать елку</a>
 					<a href="#" class="intro__buttons-link">Посетить шоу-рум</a>
 				</div>
 			</div>
@@ -84,7 +84,7 @@
 
 	<main class="catalog">
 		<div class="container">
-			<div class="section__item">
+			<div class="section__item wow jackInTheBox" data-wow-offset="200">
 				<h2 class="section__item-title">Каталог новогодних елок</h2>
 				<div class="section__subtitle">
 					<img src="img/wave-01.png" alt="Каталог новогодних елок" class="section__subtitle-img"/>
@@ -94,7 +94,7 @@
 			</div>
 			<!-- /.section__item -->
 			<div class="catalog__inner">
-				<div class="catalog__item">
+				<div class="catalog__item wow fadeInLeftBig" data-wow-offset="200">
 					<div class="catalog__header">
 						<button class="catalog__header-btn"><img src="img/catalog-btn.png" alt="Дриада Микс светло-зеленая"/></button>
 						<div class="catalog__header-img">
@@ -151,11 +151,11 @@
 								</tr>
 							</tbody>
 						</table>
-						<button class="catalog__btn">купить елку</button>
+						<button class="catalog__btn js-button-compaign">купить елку</button>
 					</div>
 				</div>
 				<!-- /.catalog__item -->
-				<div class="catalog__item">
+				<div class="catalog__item wow fadeInRightBig" data-wow-offset="200">
 					<div class="catalog__header">
 						<button class="catalog__header-btn"><img src="img/catalog-btn.png" alt="Дриада Микс светло-зеленая"/></button>
 						<div class="catalog__header-img">
@@ -212,7 +212,7 @@
 								</tr>
 							</tbody>
 						</table>
-						<button class="catalog__btn">купить елку</button>
+						<button class="catalog__btn js-button-compaign">купить елку</button>
 					</div>
 				</div>
 				<!-- /.catalog__item -->
@@ -225,7 +225,7 @@
 
 	<section class="advantage section">
 		<div class="container">
-			<div class="section__item">
+			<div class="section__item wow jackInTheBox" data-wow-offset="200">
 				<h2 class="section__item-title">Преимущества Наших Елок</h2>
 				<div class="section__subtitle">
 					<img src="img/wave-01.png" alt="Каталог новогодних елок" class="section__subtitle-img section__subtitle-img--small"/>
@@ -279,7 +279,7 @@
 
 	<section class="showroom section">
 		<div class="container">
-			<div class="section__item">
+			<div class="section__item wow jackInTheBox" data-wow-offset="200">
 				<div class="showroom__title">
 					<img src="img/showroom-01.png" alt="шоу-рум" class="showroom__title-img"/>
 					<h2 class="showroom__title-text">Посетите наш шоу-рум</h2>
@@ -379,7 +379,7 @@
 				<a href="tel:+375333274512" class="address__phones-link">+375 33 327-45-12</a>
 				<a href="tel:+375293274512" class="address__phones-link">+375 29 327-45-12</a>
 			</div>
-			<button class="address__callback">заказать звонок</button>
+			<button class="address__callback js-button-compaign">заказать звонок</button>
 		</div>
 	</section>
 	<!-- /.address section -->
@@ -408,13 +408,49 @@
 					</div>
 				</div>
 				<div class="header__item">
-					<button class="btn__callback">заказать звонок</button>
+					<button class="btn__callback js-button-compaign">заказать звонок</button>
 				</div>
 			</div>
 			<!-- /.header__inner -->
 		</div>
 		<!-- /.container -->
 	</footer>
+
+	<div class="popup js-overlay-compaing">
+		<div class="popup__inner js-popup-compaing">
+			<span class="popup-close js-close-compaing"></span>
+			<div class="popup__title">
+				<img src="img/showroom-01.png" alt="" class="popup__title-img"/>
+				<h3 class="popup__title-text">Купить елку</h3>
+			</div>
+			<div class="popup__subtitle">
+				<img src="img/wave-01.png" alt="" class="popup__subtitle-img"/>
+				<div class="popup__subtitle-text">Заполните поля ниже</div>
+				<img src="img/wave-01.png" alt="" class="popup__subtitle-img"/>
+			</div>
+			<form action="#" class="popup__form">
+				<div class="popup__item">
+					<label for="#" class="popup__item-label">Имя</label>
+					<input type="text" name="username" placeholder="Введите имя" class="popup__item-input"/>
+				</div>
+				<div class="popup__item">
+					<label for="#" class="popup__item-label">Телефон</label>
+					<input type="tel" name="userphone" placeholder="+38 ( ___ ) ___ - __ - __" class="popup__item-input"/>
+				</div>
+				<div class="popup__item popup__item-select">
+					<label for="#" class="popup__item-label">Телефон</label>
+					<select class="popup__select popup__item-input">
+						<option value="" disabled selected>Выберите высоту елки</option>
+						<option value="1">1,3 м</option>
+						<option value="2">1,5 м</option>
+						<option value="3">1,8 м</option>
+						<option value="4">2,2 м</option>
+					</select>
+				</div>
+				<button type="submit" class="popup__btn">купить елку</button>
+			</form>
+		</div>
+	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/main.js"></script>

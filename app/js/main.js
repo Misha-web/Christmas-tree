@@ -1,4 +1,8 @@
 $(document).ready(function() {
+	//wow
+
+	new WOW().init();
+
 	$('.slider').slick({
 		slidesToShow: 3,
 		slidesToScroll: 1,
@@ -38,6 +42,22 @@ $(document).ready(function() {
 			}
 		},
 		]
+	});
+
+	//popup
+	$('.js-button-compaign').click(function() {
+		$('.js-overlay-compaing').fadeIn();
+	});
+
+	$('.js-close-compaing').click(function() {
+		$('.js-overlay-compaing').fadeOut();
+	});
+
+	$(document).mouseup(function (e) {
+		let popup = $('.js-popup-compaing');
+		if (e.target!=popup[0]&&popup.has(e.target).length === 0){
+			$('.js-overlay-compaing').fadeOut();
+		}
 	});
 
 	//Map
