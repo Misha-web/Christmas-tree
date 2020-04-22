@@ -166,7 +166,7 @@
 @media(max-width: $md3) {
 	.popup {
 		&__inner {
-			padding: 30px 50px;
+			padding: 50px 50px;
 		}
 		&__title-text {
 			font-size: 24px;
@@ -176,19 +176,44 @@
 		}
 	}
 }
+
+@media(max-width: 600px) {
+	.popup {
+		&-close {;
+			&:after, &:before {
+				top: 0;
+			}
+		}
+	}
+}
+
 @media(max-width: $md4) {
 	.popup {
 		&__inner {
-			padding: 20px 20px;
+			padding: 50px 20px;
+		}
+		&__title {
+			margin-bottom: 15px;
 		}
 		&__title-text {
 			font-size: 21px;
 		}
 		&__subtitle {
+			margin-bottom: 20px;
 			justify-content: center;
 		}
 		&__subtitle-img {
 			display: none;
+		}
+		&__item {
+			margin-bottom: 20px;
+		}
+		&__item-input {
+			padding: 15px 25px;
+		}
+		&__btn {
+			padding: 16px 40px;
+			font-size: 16px;
 		}
 	}
 }
