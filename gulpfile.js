@@ -52,7 +52,8 @@ gulp.task('script', function(){
 gulp.task('js', function(){
     return gulp.src([
         'node_modules/wow.js/dist/wow.min.js',
-        'node_modules/slick-carousel/slick/slick.min.js'
+        'node_modules/slick-carousel/slick/slick.min.js',
+        'node_modules/jquery.maskedinput/src/jquery.maskedinput.js'
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())

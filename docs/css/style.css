@@ -4533,34 +4533,13 @@ template {
 }
 
 .popup__item-input {
+  color: #d1d1d1;
+  font-family: "Circe Regular", sans-serif;
+  font-size: 16px;
+  letter-spacing: -0.16px;
   width: 100%;
   padding: 20px 25px;
   border: 1px solid #d1d1d1;
-}
-
-.popup__item-input::-webkit-input-placeholder {
-  font-size: 16px;
-  letter-spacing: -0.16px;
-}
-
-.popup__item-input::-moz-placeholder {
-  font-size: 16px;
-  letter-spacing: -0.16px;
-}
-
-.popup__item-input:-ms-input-placeholder {
-  font-size: 16px;
-  letter-spacing: -0.16px;
-}
-
-.popup__item-input::-ms-input-placeholder {
-  font-size: 16px;
-  letter-spacing: -0.16px;
-}
-
-.popup__item-input::placeholder {
-  font-size: 16px;
-  letter-spacing: -0.16px;
 }
 
 .popup__item-input:focus {
@@ -4595,23 +4574,25 @@ template {
 .popup-close:after {
   content: '';
   position: absolute;
-  bottom: 0;
-  right: 0;
-  background-color: #d3d3d3;
-  height: 1px;
-  width: 33px;
+  top: 0;
+  left: -13px;
+  background-color: transparent;
+  height: 22px;
+  width: 22px;
+  border-top: 2px solid #d3d3d3;
   transform: rotate(45deg);
 }
 
 .popup-close:before {
   content: '';
   position: absolute;
-  bottom: 0;
+  top: 0;
   right: 0;
-  background-color: #d3d3d3;
-  height: 1px;
-  width: 33px;
-  transform: rotate(-45deg);
+  background-color: transparent;
+  height: 22px;
+  width: 22px;
+  border-right: 2px solid #d3d3d3;
+  transform: rotate(-135deg);
 }
 
 @media (max-width: 768px) {

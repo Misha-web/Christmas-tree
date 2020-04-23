@@ -11,7 +11,11 @@ $(document).ready(function() {
 			$("html, body").animate({
 				scrollTop: blockOffset
 			}, 1000)
-	})
+	});
+
+	//Mask 
+
+	$("#phone").mask("+38 (99) 999 - 99 - 999");
 
 	$('.slider').slick({
 		slidesToShow: 3,

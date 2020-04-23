@@ -18,6 +18,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-tinypng-compress": "^1.2.5",
     "gulp-uglify": "^3.0.2",
+    "jquery.maskedinput": "^1.4.1",
     "normalize.css": "^8.0.1",
     "slick-carousel": "^1.8.1",
     "wow.js": "^1.2.2"
